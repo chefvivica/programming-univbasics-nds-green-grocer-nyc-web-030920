@@ -208,7 +208,5 @@ sum = 0
   while i < my_cart.length do 
     sum += my_cart[:price]
   
-  i += 1 
-end 
 
 end
