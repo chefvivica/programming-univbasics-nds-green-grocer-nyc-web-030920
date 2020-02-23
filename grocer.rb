@@ -200,21 +200,40 @@ def checkout(cart, coupons)
 # check if sum > 100, total will be sum * 0.9 , else return sum 
 
 
-my_cart = consolidate_cart (cart)
-my_cart = apply_coupons(my_cart, coupons)
-my_cart = apply_clearance(my_cart)
+# my_cart = consolidate_cart (cart)
+# my_cart = apply_coupons(my_cart, coupons)
+# my_cart = apply_clearance(my_cart)
 
+# i = 0 
+# sum = 0 
+#   while i < my_cart.length do 
+#     sum += my_cart[i][:price]
+#     i += 1 
+#   end 
+  
+#     if sum > 100 
+#       sum = sum * 0.9 
+#     else
+#     sum 
+#     end
+# sum 
+# end
+
+
+my_cart = consolidate_cart (cart)
 i = 0 
-sum = 0 
+total = 0 
   while i < my_cart.length do 
-    sum += my_cart[i][:price]
+    total += my_cart[i][:price]
     i += 1 
   end 
   
-    if sum > 100 
-      sum = sum * 0.9 
+  
+    if total > 100 
+      total = total * 0.9 
     else
-    sum 
+    
     end
 sum 
 end
+
