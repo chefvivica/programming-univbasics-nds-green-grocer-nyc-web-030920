@@ -207,7 +207,7 @@ my_cart = apply_clearance(my_cart)
 i = 0 
 sum = 0 
   while i < my_cart.length do 
-    sum += my_cart[i][:price] * my_cart[i][:count]
+    sum += my_cart[i][:price] * my_cart[i][:count].round(2)
     i += 1 
   end 
   
