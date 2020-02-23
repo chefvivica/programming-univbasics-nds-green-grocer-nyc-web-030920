@@ -211,7 +211,7 @@ sum = 0
     i += 1 
   end 
   
-    if sum >= 100 
+    if sum > 100 
       sum = sum * 0.9 
     else
     sum 
