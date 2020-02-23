@@ -191,4 +191,24 @@ def checkout(cart, coupons)
 # of items. If, after the coupons and discounts are applied, the cart's total is
 # over $100, the customer gets an additional 10% off. Apply this discount when
 # appropriate.
-# end
+
+
+# my_cart represents all the items what we purchased from  cart using the method consolidate_cart
+# apply the apply_coupons method to update my_cart which change the couponed items price with the correct prices
+# apply the apply_clearance method to update my_cart which change the clearanced items price with the correct prices
+# get sum from the my_cart[:price] using the loop in my_cart.length
+# check if sum > 100, total will be sum * 0.9 , else return sum 
+
+my_cart = consolidate_cart (cart)
+my_cart = apply_coupons(my_cart, coupons)
+my_cart = apply_clearance(my_cart)
+
+i = 0 
+sum = 0 
+  while i < my_cart.length do 
+    sum += my_cart[:price]
+  
+  i += 1 
+  
+
+end
