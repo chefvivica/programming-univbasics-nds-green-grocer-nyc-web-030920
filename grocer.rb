@@ -199,6 +199,7 @@ def checkout(cart, coupons)
 # get sum from the my_cart[:price] using the loop in my_cart.length
 # check if sum > 100, total will be sum * 0.9 , else return sum 
 
+
 my_cart = consolidate_cart (cart)
 my_cart = apply_coupons(my_cart, coupons)
 my_cart = apply_clearance(my_cart)
