@@ -170,14 +170,27 @@ i = 0
 end
 
 def checkout(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # This method should call
-  # * consolidate_cart(array)
-  # * apply_coupons
-  # * apply_clearance
-  #
+ 
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
   
-end
+# * Arguments:
+#   * `Array`: a collection of item `Hash`es
+#   * `Array`: a collection of coupon `Hash`es
+# * Returns:
+#   * `Float`: a total of the cart
+
+# Here's where we stitch it all together. Given a "cart" `Array`, the first
+# argument, we should first create a new consolidated cart using the
+# `consolidate_cart` method.
+
+# We should pass the newly consolidated cart to `apply_coupons` and then send it to
+# `apply_clearance`. With all the discounts applied, we should loop through the
+# "consolidated and discounts-applied" cart and multiply each item Hash's price
+# by its count and accumulate that to a grand total.
+
+# As one last wrinkle, our grocery store offers a deal for customers buying lots
+# of items. If, after the coupons and discounts are applied, the cart's total is
+# over $100, the customer gets an additional 10% off. Apply this discount when
+# appropriate.
+# end
