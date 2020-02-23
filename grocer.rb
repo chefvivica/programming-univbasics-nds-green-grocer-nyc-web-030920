@@ -209,6 +209,6 @@ sum = 0
     sum += my_cart[:price]
   
   i += 1 
-  
+end 
 
 end
